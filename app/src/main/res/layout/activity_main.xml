@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFFFFF"
+        android:orientation="vertical"
+
+        tools:context="com.example.koloh.tipwarebusinesscard.MainActivity">
+
+
+        <ImageView
+            android:id="@+id/tipware_logo_image"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/tipware_logo" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#CE93D8" />
+
+
+        <TextView
+            android:id="@+id/first_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="36dp"
+            android:layout_marginTop="8dp"
+            android:fontFamily="sans-serif light"
+            android:text="@string/first_text"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#CE93D8" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="36dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="8dp"
+            android:fontFamily="sans-serif light"
+            android:text="@string/second_text"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="8dp"
+            android:background="#CE93D8" />
+
+        <Spinner
+            android:id="@+id/opening_time_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="36dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"/>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="16dp"
+            android:background="#CE93D8" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/call_button"
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="36dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="16dp"
+                android:drawableTop="@drawable/ic_call_icon"
+                android:layout_marginBottom="8dp"
+                android:background="#CE93D8"
+                android:linksClickable="true"
+                android:text="Call"
+                android:textColor="#000" />
+
+            <Button
+                android:id="@+id/email_button"
+                android:layout_toRightOf="@id/call_button"
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:drawableTop="@drawable/ic_email"
+                android:layout_height="match_parent"
+                android:layout_marginRight="16dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="8dp"
+                android:background="#CE93D8"
+                android:linksClickable="true"
+                android:text="EMAIL"
+                android:textColor="#000" />
+
+            <Button
+                android:id="@+id/website_button"
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:drawableTop="@drawable/ic_www"
+                android:layout_marginRight="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="8dp"
+                android:background="#CE93D8"
+                android:linksClickable="true"
+                android:text="Website"
+                android:textColor="#000" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+</ScrollView>
