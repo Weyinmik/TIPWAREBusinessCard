@@ -96,8 +96,8 @@
                 android:layout_marginBottom="8dp"
                 android:background="#CE93D8"
                 android:linksClickable="true"
-                android:text="Call"
-                android:textColor="#000" />
+                android:text="@string/call_button_text"
+                android:textColor="#000000" />
 
             <Button
                 android:id="@+id/email_button"
@@ -112,8 +112,8 @@
                 android:layout_marginBottom="8dp"
                 android:background="#CE93D8"
                 android:linksClickable="true"
-                android:text="EMAIL"
-                android:textColor="#000" />
+                android:text="@string/email_button_text"
+                android:textColor="#000000" />
 
             <Button
                 android:id="@+id/website_button"
@@ -127,8 +127,8 @@
                 android:layout_marginBottom="8dp"
                 android:background="#CE93D8"
                 android:linksClickable="true"
-                android:text="Website"
-                android:textColor="#000" />
+                android:text="@string/website_button_text"
+                android:textColor="#000000" />
         </LinearLayout>
 
 
