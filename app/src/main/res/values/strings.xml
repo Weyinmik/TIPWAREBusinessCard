@@ -2,7 +2,7 @@
     <string name="app_name">TIPWARE Business Card</string>
     <string name="contact_number">tel:023619878790</string>
     <string-array name="time_array">
-        <item>--View Opening Times--</item>
+        <item>Opening Times</item>
         <item>Monday: 8:00 AM - 6:00 PM</item>
         <item>Tuesday: 8:00 AM - 5:30 PM</item>
         <item>Wednesday: 8:00 AM - 5:00 PM</item>
