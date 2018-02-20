@@ -16,60 +16,59 @@ public class MainActivity extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        super.onCreate ( savedInstanceState );
+        setContentView ( R.layout.activity_main );
 
-        Spinner timeSpinner = (Spinner) findViewById(R.id.opening_time_spinner);
+        //Spinner is declared and initialised
+        Spinner timeSpinner = (Spinner) findViewById ( R.id.opening_time_spinner );
 
-        // Create an ArrayAdapter using the string array and a default spinner
-        ArrayAdapter<String> timeAdapter = new ArrayAdapter <String>(MainActivity.this,
-                        android.R.layout.simple_spinner_item, getResources().getStringArray(R.array.time_array));
+        // ArrayAdapter is created and default spinner is used from the android studio inbuilt library of spinner items
+        ArrayAdapter<String> timeAdapter = new ArrayAdapter<String> ( MainActivity.this,
+                android.R.layout.simple_spinner_item, getResources ().getStringArray ( R.array.time_array ) );
 
-        // Specify the layout to use when the list of choices appears
-        timeAdapter
-                .setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        // The simple_spinner_dropdown_item type of layout is used to display the dropdown items
+        timeAdapter.setDropDownViewResource ( android.R.layout.simple_spinner_dropdown_item );
 
-        // Apply the adapter to the spinner
-        timeSpinner.setAdapter(timeAdapter);
+        // Adapter is applied to the spinner
+        timeSpinner.setAdapter ( timeAdapter );
 
         //To activate the contact  telephone number button
-        Button callButton = (Button) findViewById(R.id.call_button);
-        callButton.setOnClickListener(new View.OnClickListener() {
+        Button callButton = (Button) findViewById ( R.id.call_button );
+        callButton.setOnClickListener ( new View.OnClickListener () {
             @Override
             public void onClick(View v) {
-                Intent callIntent =new Intent(Intent.ACTION_DIAL, Uri.parse ( "tel:023619878790" ));
-                startActivity(callIntent);
+                Intent callIntent = new Intent ( Intent.ACTION_DIAL, Uri.parse ( "tel:023619878790" ) );
+                startActivity ( callIntent );
             }
-        });
+        } );
 
         //To activate the email button
-        Button emailButton = (Button) findViewById(R.id.email_button);
-        emailButton.setOnClickListener(new View.OnClickListener() {
+        Button emailButton = (Button) findViewById ( R.id.email_button );
+        emailButton.setOnClickListener ( new View.OnClickListener () {
             @Override
             public void onClick(View v) {
                 String subject = "";
                 String body = "";
-                Intent emailIntent =new Intent(Intent.ACTION_SENDTO, Uri.fromParts("mailto","info@tipware.de", null));
-                emailIntent.putExtra(Intent.EXTRA_SUBJECT, subject);
-                emailIntent.putExtra(Intent.EXTRA_TEXT, body);
-                startActivity(Intent.createChooser(emailIntent, "info@tipware.de :"));
+                Intent emailIntent = new Intent ( Intent.ACTION_SENDTO, Uri.fromParts ( "mailto", "info@tipware.de", null ) );
+                emailIntent.putExtra ( Intent.EXTRA_SUBJECT, subject );
+                emailIntent.putExtra ( Intent.EXTRA_TEXT, body );
+                startActivity ( Intent.createChooser ( emailIntent, "info@tipware.de :" ) );
             }
-        });
+        } );
 
         //To activate the website address button
-        Button websiteButton = (Button) findViewById(R.id.website_button);
-        websiteButton.setOnClickListener(new View.OnClickListener() {
+        Button websiteButton = (Button) findViewById ( R.id.website_button );
+        websiteButton.setOnClickListener ( new View.OnClickListener () {
             @Override
             public void onClick(View v) {
-                Intent websiteIntent =new Intent(Intent.ACTION_VIEW, Uri.parse ( "https://www.tipware.de/" ));
-                startActivity(websiteIntent);
+                Intent websiteIntent = new Intent ( Intent.ACTION_VIEW, Uri.parse ( "https://www.tipware.de/" ) );
+                startActivity ( websiteIntent );
             }
-        });
+        } );
 
 
     }
 }
-
 
 
 // Helpful Resources

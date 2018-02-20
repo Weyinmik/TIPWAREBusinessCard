@@ -3,4 +3,8 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
+
+    <color name="colorText">#000000</color>
+    <color name="colorParentBackground">#FFFFFF</color>
+    <color name="colorOtherBackground">#CE93D8</color>
 </resources>

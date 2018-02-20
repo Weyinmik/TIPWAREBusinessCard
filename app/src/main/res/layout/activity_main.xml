@@ -16,9 +16,9 @@
             android:id="@+id/tipware_logo_image"
             android:layout_width="@dimen/image_width"
             android:layout_height="@dimen/image_height"
+            android:layout_marginBottom="@dimen/layout_margin_bottom_big"
             android:layout_marginLeft="@dimen/layout_margin_left"
             android:layout_marginTop="@dimen/layout_margin_top"
-            android:layout_marginBottom="@dimen/layout_margin_bottom_big"
             android:scaleType="centerCrop"
             android:src="@drawable/tipware_logo" />
 
@@ -32,11 +32,11 @@
             android:id="@+id/first_text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="@dimen/layout_margin_left"
-            android:layout_marginTop="@dimen/layout_margin_top_small"
-            android:layout_marginRight="@dimen/layout_margin_right"
-            android:fontFamily="sans-serif light"
             android:layout_marginBottom="@dimen/layout_margin_bottom"
+            android:layout_marginLeft="@dimen/layout_margin_left"
+            android:layout_marginRight="@dimen/layout_margin_right"
+            android:layout_marginTop="@dimen/layout_margin_top_small"
+            android:fontFamily="sans-serif light"
             android:text="@string/first_text"
             android:textColor="@color/colorText"
             android:textSize="@dimen/text_size" />
@@ -69,11 +69,11 @@
             android:id="@+id/opening_time_spinner"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/layout_margin_bottom"
             android:layout_marginLeft="@dimen/layout_margin_left"
             android:layout_marginRight="@dimen/layout_margin_right"
             android:layout_marginTop="@dimen/layout_margin_top"
-            android:textSize="@dimen/text_size"
-            android:layout_marginBottom="@dimen/layout_margin_bottom"/>
+            android:textSize="@dimen/text_size" />
 
 
         <View
@@ -90,30 +90,30 @@
             <Button
                 android:id="@+id/call_button"
                 android:layout_width="wrap_content"
-                android:layout_weight="@dimen/layout_weight"
                 android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/layout_margin_bottom"
                 android:layout_marginLeft="@dimen/layout_margin_left"
                 android:layout_marginRight="@dimen/layout_margin_right"
                 android:layout_marginTop="@dimen/layout_margin_top"
-                android:drawableTop="@drawable/ic_call_icon"
-                android:layout_marginBottom="@dimen/layout_margin_bottom"
+                android:layout_weight="@dimen/layout_weight"
                 android:background="@color/colorOtherBackground"
+                android:drawableTop="@drawable/ic_call_icon"
                 android:linksClickable="true"
                 android:text="@string/call_button_text"
                 android:textColor="@color/colorText" />
 
             <Button
                 android:id="@+id/email_button"
-                android:layout_toRightOf="@id/call_button"
                 android:layout_width="wrap_content"
-                android:layout_weight="@dimen/layout_weight"
-                android:drawableTop="@drawable/ic_email"
                 android:layout_height="match_parent"
-                android:layout_marginRight="@dimen/layout_margin_right"
-                android:layout_marginLeft="@dimen/layout_margin_left_smaller"
-                android:layout_marginTop="@dimen/layout_margin_top"
                 android:layout_marginBottom="@dimen/layout_margin_bottom"
+                android:layout_marginLeft="@dimen/layout_margin_left_smaller"
+                android:layout_marginRight="@dimen/layout_margin_right"
+                android:layout_marginTop="@dimen/layout_margin_top"
+                android:layout_toRightOf="@id/call_button"
+                android:layout_weight="@dimen/layout_weight"
                 android:background="@color/colorOtherBackground"
+                android:drawableTop="@drawable/ic_email"
                 android:linksClickable="true"
                 android:text="@string/email_button_text"
                 android:textColor="@color/colorText" />
@@ -121,14 +121,14 @@
             <Button
                 android:id="@+id/website_button"
                 android:layout_width="wrap_content"
-                android:layout_weight="@dimen/layout_weight"
                 android:layout_height="match_parent"
-                android:drawableTop="@drawable/ic_www"
-                android:layout_marginRight="@dimen/layout_margin_right"
-                android:layout_marginLeft="@dimen/layout_margin_left_small"
-                android:layout_marginTop="@dimen/layout_margin_top"
                 android:layout_marginBottom="@dimen/layout_margin_bottom"
+                android:layout_marginLeft="@dimen/layout_margin_left_small"
+                android:layout_marginRight="@dimen/layout_margin_right"
+                android:layout_marginTop="@dimen/layout_margin_top"
+                android:layout_weight="@dimen/layout_weight"
                 android:background="@color/colorOtherBackground"
+                android:drawableTop="@drawable/ic_www"
                 android:linksClickable="true"
                 android:text="@string/website_button_text"
                 android:textColor="@color/colorText" />
