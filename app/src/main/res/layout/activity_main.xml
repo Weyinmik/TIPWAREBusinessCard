@@ -30,10 +30,10 @@
 
         <TextView
             android:id="@+id/first_text"
-            android:text="@string/first_text"
+            style="@style/CustomizedTextViewStyle"
             android:layout_marginBottom="@dimen/layout_margin_bottom"
             android:fontFamily="@string/font_family_text"
-            style="@style/CustomTextViewStyle" />
+            android:text="@string/first_text" />
 
 
         <View
@@ -43,9 +43,9 @@
 
 
         <TextView
-            android:text="@string/second_text"
+            style="@style/CustomizedTextViewStyle"
             android:fontFamily="@string/font_family_text"
-            style="@style/CustomTextViewStyle" />
+            android:text="@string/second_text" />
 
         <View
             android:layout_width="match_parent"
@@ -77,26 +77,26 @@
 
             <Button
                 android:id="@+id/call_button"
+                style="@style/CustomizeButtonStyle"
                 android:layout_marginLeft="@dimen/layout_margin_left"
                 android:layout_marginRight="@dimen/layout_margin_right"
                 android:drawableTop="@drawable/ic_call_icon"
-                android:text="@string/call_button_text"
-                style="@style/CustomizeButtonStyle" />
+                android:text="@string/call_button_text" />
 
             <Button
                 android:id="@+id/email_button"
+                style="@style/CustomizeButtonStyle"
                 android:layout_marginLeft="@dimen/layout_margin_left_smaller"
                 android:layout_toRightOf="@id/call_button"
                 android:drawableTop="@drawable/ic_email"
-                android:text="@string/email_button_text"
-                style="@style/CustomizeButtonStyle" />
+                android:text="@string/email_button_text" />
 
             <Button
                 android:id="@+id/website_button"
+                style="@style/CustomizeButtonStyle"
                 android:layout_marginLeft="@dimen/layout_margin_left_small"
                 android:drawableTop="@drawable/ic_www"
-                android:text="@string/website_button_text"
-                style="@style/CustomizeButtonStyle" />
+                android:text="@string/website_button_text" />
         </LinearLayout>
 
 
