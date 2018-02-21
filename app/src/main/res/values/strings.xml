@@ -17,4 +17,5 @@
     <string name="call_button_text">CALL</string>
     <string name="email_button_text">EMAIL</string>
     <string name="website_button_text">WEBSITE</string>
+    <string name="font_family_text">sans-serif light</string>
 </resources>

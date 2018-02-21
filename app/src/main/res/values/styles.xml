@@ -8,4 +8,27 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="CustomTextViewStyle" parent="@style/TextAppearance.AppCompat">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">@dimen/layout_margin_left</item>
+        <item name="android:layout_marginRight">@dimen/layout_margin_right</item>
+        <item name="android:layout_marginTop">@dimen/layout_margin_top_small</item>
+        <item name="android:textColor">@color/colorText</item>
+        <item name="android:textSize">@dimen/text_size</item>
+    </style>
+
+    <style name="CustomizeButtonStyle" parent="@style/Widget.AppCompat.Button">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_marginBottom">@dimen/layout_margin_bottom</item>
+        <item name="android:layout_marginRight">@dimen/layout_margin_right</item>
+        <item name="android:layout_marginTop">@dimen/layout_margin_top</item>
+        <item name="android:layout_weight">@dimen/layout_weight</item>
+        <item name="android:background">@color/colorOtherBackground</item>
+        <item name="android:linksClickable">true</item>
+        <item name="android:textColor">@color/colorText</item>
+    </style>
+
+
 </resources>

@@ -30,16 +30,10 @@
 
         <TextView
             android:id="@+id/first_text"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="@dimen/layout_margin_bottom"
-            android:layout_marginLeft="@dimen/layout_margin_left"
-            android:layout_marginRight="@dimen/layout_margin_right"
-            android:layout_marginTop="@dimen/layout_margin_top_small"
-            android:fontFamily="sans-serif light"
             android:text="@string/first_text"
-            android:textColor="@color/colorText"
-            android:textSize="@dimen/text_size" />
+            android:layout_marginBottom="@dimen/layout_margin_bottom"
+            android:fontFamily="@string/font_family_text"
+            style="@style/CustomTextViewStyle" />
 
 
         <View
@@ -49,15 +43,9 @@
 
 
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="@dimen/layout_margin_left"
-            android:layout_marginRight="@dimen/layout_margin_right"
-            android:layout_marginTop="@dimen/layout_margin_top_small"
-            android:fontFamily="sans-serif light"
             android:text="@string/second_text"
-            android:textColor="@color/colorText"
-            android:textSize="@dimen/text_size" />
+            android:fontFamily="@string/font_family_text"
+            style="@style/CustomTextViewStyle" />
 
         <View
             android:layout_width="match_parent"
@@ -89,49 +77,26 @@
 
             <Button
                 android:id="@+id/call_button"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_marginBottom="@dimen/layout_margin_bottom"
                 android:layout_marginLeft="@dimen/layout_margin_left"
                 android:layout_marginRight="@dimen/layout_margin_right"
-                android:layout_marginTop="@dimen/layout_margin_top"
-                android:layout_weight="@dimen/layout_weight"
-                android:background="@color/colorOtherBackground"
                 android:drawableTop="@drawable/ic_call_icon"
-                android:linksClickable="true"
                 android:text="@string/call_button_text"
-                android:textColor="@color/colorText" />
+                style="@style/CustomizeButtonStyle" />
 
             <Button
                 android:id="@+id/email_button"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_marginBottom="@dimen/layout_margin_bottom"
                 android:layout_marginLeft="@dimen/layout_margin_left_smaller"
-                android:layout_marginRight="@dimen/layout_margin_right"
-                android:layout_marginTop="@dimen/layout_margin_top"
                 android:layout_toRightOf="@id/call_button"
-                android:layout_weight="@dimen/layout_weight"
-                android:background="@color/colorOtherBackground"
                 android:drawableTop="@drawable/ic_email"
-                android:linksClickable="true"
                 android:text="@string/email_button_text"
-                android:textColor="@color/colorText" />
+                style="@style/CustomizeButtonStyle" />
 
             <Button
                 android:id="@+id/website_button"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_marginBottom="@dimen/layout_margin_bottom"
                 android:layout_marginLeft="@dimen/layout_margin_left_small"
-                android:layout_marginRight="@dimen/layout_margin_right"
-                android:layout_marginTop="@dimen/layout_margin_top"
-                android:layout_weight="@dimen/layout_weight"
-                android:background="@color/colorOtherBackground"
                 android:drawableTop="@drawable/ic_www"
-                android:linksClickable="true"
                 android:text="@string/website_button_text"
-                android:textColor="@color/colorText" />
+                style="@style/CustomizeButtonStyle" />
         </LinearLayout>
 
 
