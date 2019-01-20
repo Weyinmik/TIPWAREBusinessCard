@@ -1,23 +1,31 @@
 package com.example.koloh.tipwarebusinesscard;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
-import android.util.Log;
+import android.support.v7.app.AppCompatActivity;
+import android.view.MotionEvent;
+import android.view.ScaleGestureDetector;
 import android.view.View;
-import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.Spinner;
-import android.widget.AdapterView.OnItemSelectedListener;
 
-public class MainActivity extends Activity {
+public class MainActivity extends AppCompatActivity {
+
+    private ScaleGestureDetector mScaleGestureDetector;
+    private float mScaleFactor = 1.0f;
+    private ImageView mImageView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate ( savedInstanceState );
         setContentView ( R.layout.activity_main );
+
+        // initialize the view and the gesture detector
+        mImageView = findViewById ( R.id.tipware_logo_image );
+        mScaleGestureDetector = new ScaleGestureDetector ( this, new ScaleListener () );
 
         //Spinner is declared and initialised
         Spinner timeSpinner = (Spinner) findViewById ( R.id.opening_time_spinner );
@@ -67,6 +75,26 @@ public class MainActivity extends Activity {
         } );
 
 
+    }
+
+    // this redirects all touch events in the activity to the gesture detector
+    @Override
+    public boolean onTouchEvent(MotionEvent event) {
+        return mScaleGestureDetector.onTouchEvent ( event );
+
+    }
+
+
+    private class ScaleListener extends ScaleGestureDetector.SimpleOnScaleGestureListener {
+        @Override
+        public boolean onScale(ScaleGestureDetector scaleGestureDetector) {
+            mScaleFactor *= scaleGestureDetector.getScaleFactor ();
+            mScaleFactor = Math.max ( 0.1f,
+                    Math.min ( mScaleFactor, 10.0f ) );
+            mImageView.setScaleX ( mScaleFactor );
+            mImageView.setScaleY ( mScaleFactor );
+            return true;
+        }
     }
 }
 

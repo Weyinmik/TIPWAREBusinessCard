@@ -9,6 +9,8 @@
     <dimen name="layout_margin_top_small">8dp</dimen>
     <dimen name="layout_margin_bottom">8dp</dimen>
     <dimen name="layout_margin_bottom_big">16dp</dimen>
+    <dimen name="layout_margin_bottom_zoom">64dp</dimen>
+    <dimen name="layout_margin_top_zoom">64dp</dimen>
 
     <dimen name="image_width">250dp</dimen>
     <dimen name="image_height">250dp</dimen>
