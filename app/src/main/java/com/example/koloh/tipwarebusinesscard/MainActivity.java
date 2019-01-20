@@ -16,7 +16,7 @@ public class MainActivity extends AppCompatActivity {
 
     private ScaleGestureDetector mScaleGestureDetector;
     private float mScaleFactor = 1.0f;
-    private ImageView mImageView;
+    private ImageView ImageView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,7 +24,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView ( R.layout.activity_main );
 
         // initialize the view and the gesture detector
-        mImageView = findViewById ( R.id.tipware_logo_image );
+        ImageView = findViewById ( R.id.tipware_logo_image );
         mScaleGestureDetector = new ScaleGestureDetector ( this, new ScaleListener () );
 
         //Spinner is declared and initialised
@@ -91,8 +91,8 @@ public class MainActivity extends AppCompatActivity {
             mScaleFactor *= scaleGestureDetector.getScaleFactor ();
             mScaleFactor = Math.max ( 0.1f,
                     Math.min ( mScaleFactor, 10.0f ) );
-            mImageView.setScaleX ( mScaleFactor );
-            mImageView.setScaleY ( mScaleFactor );
+            ImageView.setScaleX ( mScaleFactor );
+            ImageView.setScaleY ( mScaleFactor );
             return true;
         }
     }
