@@ -79,7 +79,10 @@ public class MainActivity extends AppCompatActivity {
 
     // this redirects all touch events in the activity to the gesture detector
     @Override
-    public boolean onTouchEvent(MotionEvent event) {
+    public boolean dispatchTouchEvent(MotionEvent event) {
+        super.dispatchTouchEvent ( event );
+
+        mScaleGestureDetector.onTouchEvent ( event );
         return mScaleGestureDetector.onTouchEvent ( event );
 
     }
